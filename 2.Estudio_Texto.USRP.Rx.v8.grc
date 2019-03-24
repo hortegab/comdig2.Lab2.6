@@ -564,6 +564,53 @@
     </param>
   </block>
   <block>
+    <key>variable_qtgui_push_button</key>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>value</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(1016, 1316)</value>
+    </param>
+    <param>
+      <key>gui_hint</key>
+      <value>canal@2:0,1,1,1</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>Power_meter_reset</value>
+    </param>
+    <param>
+      <key>label</key>
+      <value>Oprima aqui para reiniciar el medidor de potencia promedio</value>
+    </param>
+    <param>
+      <key>pressed</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>released</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>int</value>
+    </param>
+  </block>
+  <block>
     <key>variable</key>
     <param>
       <key>comment</key>
@@ -710,7 +757,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(912, 1525)</value>
+      <value>(1032, 1436)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1067,6 +1114,49 @@
     <param>
       <key>value</key>
       <value>100e6</value>
+    </param>
+  </block>
+  <block>
+    <key>E3TRadio_mean_meter</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(720, 1756)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>E3TRadio_mean_meter_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>reset</key>
+      <value>Power_meter_reset</value>
     </param>
   </block>
   <block>
@@ -1489,7 +1579,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 1633)</value>
+      <value>(440, 1760)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1536,7 +1626,7 @@
     </param>
     <param>
       <key>file</key>
-      <value>/home/comdiguis2/Dropbox/_comdiguis/Lab.FaseII/Lab2.6/textoout.txt</value>
+      <value>/home/comdiguis2/MisGitHubs/comdig2.Lab2.6/textout.txt</value>
     </param>
     <param>
       <key>_coordinate</key>
@@ -1571,7 +1661,7 @@
     </param>
     <param>
       <key>comment</key>
-      <value>creo que falta elevar al cuadrado. Entonces n=20</value>
+      <value>n=20 porque RMS debe elevarse a la 2</value>
     </param>
     <param>
       <key>affinity</key>
@@ -1583,7 +1673,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(528, 1429)</value>
+      <value>(848, 1636)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1592,6 +1682,57 @@
     <param>
       <key>id</key>
       <value>blocks_nlog10_ff_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>k</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>n</key>
+      <value>20</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_nlog10_ff</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(856, 1868)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_nlog10_ff_0_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1634,7 +1775,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(584, 1621)</value>
+      <value>(848, 1748)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1642,7 +1783,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>blocks_nlog10_ff_0_0</value>
+      <value>blocks_nlog10_ff_0_0_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1689,7 +1830,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(416, 1436)</value>
+      <value>(480, 1644)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -2827,7 +2968,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(400, 1709)</value>
+      <value>(400, 1924)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -3776,7 +3917,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(704, 1634)</value>
+      <value>(968, 1828)</value>
     </param>
     <param>
       <key>gui_hint</key>
@@ -4040,7 +4181,7 @@
     </param>
     <param>
       <key>xmax</key>
-      <value>1</value>
+      <value>50</value>
     </param>
     <param>
       <key>xmin</key>
@@ -4099,11 +4240,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(664, 1422)</value>
+      <value>(960, 1732)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>canal@2:0,0,1,1</value>
+      <value>canal@2:5,0,1,1</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4115,7 +4256,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>qtgui_number_sink_0</value>
+      <value>qtgui_number_sink_0_0_0_0_0</value>
     </param>
     <param>
       <key>type</key>
@@ -4283,15 +4424,15 @@
     </param>
     <param>
       <key>max</key>
-      <value>0</value>
+      <value>2</value>
     </param>
     <param>
       <key>min</key>
-      <value>-50</value>
+      <value>-2</value>
     </param>
     <param>
       <key>name</key>
-      <value>""</value>
+      <value>"Potencia Promedio (dB)"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -4338,11 +4479,11 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(656, 1518)</value>
+      <value>(960, 1620)</value>
     </param>
     <param>
       <key>gui_hint</key>
-      <value>canal@2:1,0,1,1</value>
+      <value>canal@2:6,0,1,2</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4602,7 +4743,7 @@
     </param>
     <param>
       <key>name</key>
-      <value>"método de RMS"</value>
+      <value>"Senal potencia"</value>
     </param>
     <param>
       <key>nconnections</key>
@@ -6063,6 +6204,12 @@
     </param>
   </block>
   <connection>
+    <source_block_id>E3TRadio_mean_meter_0</source_block_id>
+    <sink_block_id>blocks_nlog10_ff_0_0_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
     <source_block_id>analog_agc2_xx_0</source_block_id>
     <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
     <source_key>0</source_key>
@@ -6100,13 +6247,13 @@
   </connection>
   <connection>
     <source_block_id>blocks_complex_to_mag_squared_0</source_block_id>
-    <sink_block_id>blocks_nlog10_ff_0_0</sink_block_id>
+    <sink_block_id>E3TRadio_mean_meter_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_nlog10_ff_0</source_block_id>
-    <sink_block_id>qtgui_number_sink_0</sink_block_id>
+    <source_block_id>blocks_complex_to_mag_squared_0</source_block_id>
+    <sink_block_id>blocks_nlog10_ff_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -6119,6 +6266,12 @@
   <connection>
     <source_block_id>blocks_nlog10_ff_0_0</source_block_id>
     <sink_block_id>qtgui_histogram_sink_x_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_nlog10_ff_0_0_0</source_block_id>
+    <sink_block_id>qtgui_number_sink_0_0_0_0_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
